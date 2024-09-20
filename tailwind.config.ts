@@ -9,8 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       maxWidth: {
-        'container': '1236px'
-      }
+        container: "1236px",
+      },
+      colors: {
+        brand: "#7C4EE4",
+        "gray-scale": {
+          100: "#999999",
+          200: "#666666",
+          300: "#333333",
+        },
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        manrope: ["var(--font-manrope)"],
+      },
     },
   },
   plugins: [],
