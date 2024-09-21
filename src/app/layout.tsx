@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const manrope = Manrope({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: ["latin"],
+  display: "swap",
   variable: "--font-manrope",
-  adjustFontFallback: false
+  adjustFontFallback: false,
 });
 
 const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
+  subsets: ["latin"],
+  display: "swap",
   variable: "--font-inter",
-  adjustFontFallback: false
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -28,10 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${manrope.variable} ${inter.variable} antialiased`}
-      >
+      <body className={`${manrope.variable} ${inter.variable} antialiased`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
