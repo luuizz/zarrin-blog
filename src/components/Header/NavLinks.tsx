@@ -14,18 +14,13 @@ export default function NavLinks({
   title,
   ...props
 }: NavLinksProps) {
+  const defaultClass =
+    "font-inter text-gray-scale-300 hover:text-brand text-base font-medium transition-all";
+
+  const combinedClass = twMerge(defaultClass, className);
+
   return (
-    <Link
-      href={href}
-      title={title}
-      {...props}
-      className={
-        (twMerge(
-          "font-inter text-gray-scale-300 hover:text-brand text-base font-medium transition-all",
-        ),
-        className)
-      }
-    >
+    <Link href={href} title={title} {...props} className={combinedClass}>
       {children}
     </Link>
   );
