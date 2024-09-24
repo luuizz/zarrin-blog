@@ -16,8 +16,12 @@ const config: Config = {
         "gray-scale": {
           100: "#999999",
           200: "#666666",
-          300: "#333333",
+          300: "#373737",
+          400: "#333333",
         },
+      },
+      backgroundImage: {
+        "element-hero": 'url("../assets/wave.svg")',
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
