@@ -14,7 +14,7 @@ export default function Footer() {
             <Image src={logo} alt="Logo Zarrin Blog" />
           </Link>
           <nav className="mb-10 flex gap-14">
-            {menuFooter.map((item, index) => (
+            {menuFooter.map((item) => (
               <Link
                 className="text-gray-scale-500 font-inter text-base/normal transition-all hover:text-brand"
                 key={item.label}
