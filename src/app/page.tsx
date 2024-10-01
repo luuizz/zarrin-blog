@@ -1,3 +1,4 @@
+import CallToAction from "@/components/CallToAction";
 import Container from "@/components/Container/container";
 import SectionLargestPost from "@/components/Home/LargestPost";
 import SectionRecentPosts from "@/components/Home/RecentsPosts";
@@ -9,6 +10,7 @@ export default function Home() {
       <SectionHomeHero />
       <SectionLargestPost />
       <SectionRecentPosts />
+      <CallToAction />
     </>
   );
 }
