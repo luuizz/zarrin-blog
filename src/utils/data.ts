@@ -7,6 +7,54 @@ import imgPost06 from "@/assets/thumb-6.png";
 import imgPost07 from "@/assets/thumb-7.png";
 import imgPost08 from "@/assets/thumb-8.png";
 import imgPost09 from "@/assets/thumb-9.png";
+import {
+  PiFacebookLogo,
+  PiInstagramLogo,
+  PiLinkedinLogo,
+  PiYoutubeLogo,
+} from "react-icons/pi";
+
+export const arraySocial = [
+  {
+    icon: PiFacebookLogo,
+    title: "Facebook",
+    url: "#",
+  },
+  {
+    icon: PiInstagramLogo,
+    title: "Instagram",
+    url: "#",
+  },
+  {
+    icon: PiLinkedinLogo,
+    title: "LinkedIn",
+    url: "#",
+  },
+  {
+    icon: PiYoutubeLogo,
+    title: "Youtube",
+    url: "#",
+  },
+];
+
+export const menuFooter = [
+  {
+    label: "Home",
+    url: "#",
+  },
+  {
+    label: "Blog",
+    url: "#",
+  },
+  {
+    label: "Sobre nós",
+    url: "#",
+  },
+  {
+    label: "Contact Us",
+    url: "#",
+  },
+];
 
 export const linksMenu = [
   {
