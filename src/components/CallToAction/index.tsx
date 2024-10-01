@@ -14,13 +14,13 @@ export default function CallToAction() {
               <input
                 className="block w-full rounded-lg px-6 py-5 font-inter text-base text-[#5A7184] ring-1 ring-inset ring-gray-300 transition-all placeholder:opacity-75 focus-within:outline-none focus:ring-2 focus:ring-inset focus:ring-brand"
                 type="email"
-                placeholder="Seu email"
+                placeholder="Your email"
               />
             </div>
 
-            <div className="w-full">
-              <button className="rounded-lg border border-white px-8 py-[15px] font-manrope text-lg font-bold text-white transition-all hover:bg-white hover:text-brand">
-                Vamos começar
+            <div className="w-full max-w-[166px]">
+              <button className="h-16 rounded-lg border border-white px-8 py-[15px] font-manrope text-lg font-bold text-white transition-all hover:bg-white hover:text-brand">
+                Get started
               </button>
             </div>
           </form>
