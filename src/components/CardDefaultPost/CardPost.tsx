@@ -1,16 +1,16 @@
-import React from "react";
-import Image, { StaticImageData } from "next/image";
-import CaptionPost from "../Caption/CaptionPost";
-import Link from "next/link";
+import React from 'react'
+import Image, { type StaticImageData } from 'next/image'
+import CaptionPost from '../Caption/CaptionPost'
+import Link from 'next/link'
 
 interface CardPostProps {
-  categoria: string;
-  tempo: string;
-  titulo: string;
-  alt: string;
-  image: StaticImageData;
-  excerpt: string;
-  link: string;
+  categoria: string
+  tempo: string
+  titulo: string
+  alt: string
+  image: StaticImageData
+  excerpt: string
+  link: string
 }
 
 export default function CardPost({
@@ -45,5 +45,5 @@ export default function CardPost({
         </span>
       </div>
     </Link>
-  );
+  )
 }

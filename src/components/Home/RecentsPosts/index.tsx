@@ -1,9 +1,9 @@
-import React from "react";
-import Container from "@/components/Container/container";
-import TopTitles from "@/components/TopTitles/TopTitles";
-import FixedPosts from "./fixedPosts";
-import CardPost from "@/components/CardDefaultPost/CardPost";
-import { dataPostRecent } from "@/utils/data";
+import React from 'react'
+import Container from '@/components/Container/container'
+import TopTitles from '@/components/TopTitles/TopTitles'
+import FixedPosts from './fixedPosts'
+import CardPost from '@/components/CardDefaultPost/CardPost'
+import { dataPostRecent } from '@/utils/data'
 
 export default function SectionRecentPosts() {
   return (
@@ -13,9 +13,9 @@ export default function SectionRecentPosts() {
 
         <FixedPosts />
         <div className="grid grid-cols-3 gap-4">
-          {dataPostRecent.map((item, index) => (
+          {dataPostRecent.map(item => (
             <CardPost
-              key={index}
+              key={item.tituloPost}
               alt="Post"
               categoria={item.category}
               excerpt={item.descricaoCurta}
@@ -28,5 +28,5 @@ export default function SectionRecentPosts() {
         </div>
       </Container>
     </section>
-  );
+  )
 }

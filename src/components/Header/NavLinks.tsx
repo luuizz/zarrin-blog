@@ -1,10 +1,10 @@
-import Link from "next/link";
-import React, { AnchorHTMLAttributes } from "react";
-import { twMerge } from "tailwind-merge";
+import Link from 'next/link'
+import React, { type AnchorHTMLAttributes } from 'react'
+import { twMerge } from 'tailwind-merge'
 
 interface NavLinksProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  href: string;
-  className?: string;
+  href: string
+  className?: string
 }
 
 export default function NavLinks({
@@ -15,13 +15,13 @@ export default function NavLinks({
   ...props
 }: NavLinksProps) {
   const defaultClass =
-    "font-inter text-gray-scale-300 hover:text-brand text-base font-medium transition-all";
+    'font-inter text-gray-scale-300 hover:text-brand text-base font-medium transition-all'
 
-  const combinedClass = twMerge(defaultClass, className);
+  const combinedClass = twMerge(defaultClass, className)
 
   return (
     <Link href={href} title={title} {...props} className={combinedClass}>
       {children}
     </Link>
-  );
+  )
 }

@@ -1,10 +1,10 @@
-"use client";
-import React from "react";
+'use client'
+import type React from 'react'
 
 interface ChildrenProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default function template({ children }: ChildrenProps) {
-  return <main>{children}</main>;
+  return <main>{children}</main>
 }

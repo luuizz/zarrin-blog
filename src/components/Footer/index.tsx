@@ -1,9 +1,9 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import Container from "../Container/container";
-import { arraySocial, menuFooter } from "@/utils/data";
-import logo from "@/assets/logo.svg";
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import Container from '../Container/container'
+import { arraySocial, menuFooter } from '@/utils/data'
+import logo from '@/assets/logo.svg'
 
 export default function Footer() {
   return (
@@ -14,7 +14,7 @@ export default function Footer() {
             <Image src={logo} alt="Logo Zarrin Blog" />
           </Link>
           <nav className="mb-10 flex gap-14">
-            {menuFooter.map((item) => (
+            {menuFooter.map(item => (
               <Link
                 className="text-gray-scale-500 font-inter text-base/normal transition-all hover:text-brand"
                 key={item.label}
@@ -27,12 +27,12 @@ export default function Footer() {
           </nav>
 
           <div className="flex gap-4">
-            {arraySocial.map((item) => (
+            {arraySocial.map(item => (
               <Link
                 className="rounded-full bg-brand p-2 text-2xl text-white transition-all hover:brightness-105"
                 href={item.url}
                 key={item.title}
-                style={{ display: "flex", alignItems: "center" }}
+                style={{ display: 'flex', alignItems: 'center' }}
               >
                 <item.icon />
               </Link>
@@ -47,5 +47,5 @@ export default function Footer() {
         </div>
       </Container>
     </footer>
-  );
+  )
 }

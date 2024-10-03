@@ -1,5 +1,5 @@
-import React from "react";
-import Container from "../Container/container";
+import React from 'react'
+import Container from '../Container/container'
 
 export default function CallToAction() {
   return (
@@ -19,7 +19,10 @@ export default function CallToAction() {
             </div>
 
             <div className="w-full max-w-[166px]">
-              <button className="h-16 rounded-lg border border-white px-8 py-[15px] font-manrope text-lg font-bold text-white transition-all hover:bg-white hover:text-brand">
+              <button
+                type="button"
+                className="h-16 rounded-lg border border-white px-8 py-[15px] font-manrope text-lg font-bold text-white transition-all hover:bg-white hover:text-brand"
+              >
                 Get started
               </button>
             </div>
@@ -32,5 +35,5 @@ export default function CallToAction() {
         </p>
       </Container>
     </section>
-  );
+  )
 }

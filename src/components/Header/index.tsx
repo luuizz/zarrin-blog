@@ -1,22 +1,22 @@
-"use client";
-import React, { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Container from "../Container/container";
-import Logo from "@/assets/logo.svg";
-import Hamburger from "hamburger-react";
-import AsideMenu from "./AsideMenu";
-import NavLinks from "./NavLinks";
-import { PiMagnifyingGlass } from "react-icons/pi";
-import { linksMenu } from "@/utils/data";
-import Button from "../Button";
+'use client'
+import React, { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import Container from '../Container/container'
+import Logo from '@/assets/logo.svg'
+import Hamburger from 'hamburger-react'
+import AsideMenu from './AsideMenu'
+import NavLinks from './NavLinks'
+import { PiMagnifyingGlass } from 'react-icons/pi'
+import { linksMenu } from '@/utils/data'
+import Button from '../Button'
 
 export default function Header() {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false)
 
   const closeMenu = () => {
-    setOpen(false);
-  };
+    setOpen(false)
+  }
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function Header() {
           <nav className="hidden items-center justify-between gap-12 lg:flex">
             <div className="flex gap-10">
               <ul className="flex items-center gap-4">
-                {linksMenu.map((item, index) => (
+                {linksMenu.map(item => (
                   <li key={item.label}>
                     <NavLinks href={item.url}>{item.label}</NavLinks>
                   </li>
@@ -48,7 +48,8 @@ export default function Header() {
             <Link href="/">
               <PiMagnifyingGlass size={24} />
             </Link>
-            <button className="relative z-[99]">
+            {/* biome-ignore lint/a11y/useButtonType: <explanation> */}
+            <button aria-hidden="false" className="relative z-[99]">
               <Hamburger
                 label="Mostrar menu"
                 toggle={setOpen}
@@ -60,5 +61,5 @@ export default function Header() {
       </header>
       <AsideMenu isOpen={isOpen} closeMenu={closeMenu} />
     </>
-  );
+  )
 }
