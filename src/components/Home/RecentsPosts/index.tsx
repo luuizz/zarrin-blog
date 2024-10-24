@@ -7,7 +7,7 @@ import { dataPostRecent } from '@/utils/data'
 
 export default function SectionRecentPosts() {
   return (
-    <section className="pb-28 pt-20">
+    <section className="pt-20 pb-28">
       <Container>
         <TopTitles link="#" title="Our Recent Posts" />
 

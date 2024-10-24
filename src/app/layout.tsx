@@ -29,7 +29,6 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    // biome-ignore lint/a11y/useValidLang: <explanation>
     <html lang="pt-br">
       <body
         className={`${manrope.variable} ${inter.variable} bg-zinc-50 antialiased`}
