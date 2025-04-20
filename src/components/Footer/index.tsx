@@ -6,6 +6,9 @@ import { arraySocial, menuFooter } from '@/utils/data'
 import logo from '@/assets/logo.svg'
 
 export default function Footer() {
+
+  const anoAtual = new Date().getFullYear();
+
   return (
     <footer className="py-10">
       <Container>
@@ -42,7 +45,7 @@ export default function Footer() {
 
         <div>
           <p className="text-gray-scale-500 mx-auto text-center font-manrope text-base font-normal">
-            Copyright Ideapeel Inc © 2023. All Right Reserved
+            Copyright Ideapeel Inc © {anoAtual}. All Right Reserved
           </p>
         </div>
       </Container>
